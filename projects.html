@@ -1,0 +1,38 @@
+---
+layout: default
+portfolios:
+  - name: Project 4
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    image: Images/healthy.jpg
+    imgDescription: healthy food
+  - name: Project 5
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    image: Images/cheese.jpg
+    imgDescription: cheese
+  - name: Project 6
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    image: Images/dirtbike.jpg
+    imgDescription: dirtbike
+  - name: Project 7
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    image: Images/adventure.jpg
+    imgDescription: adventure
+
+---
+<section class="portfolioBanner">
+  <div>
+    <h1>PORTFOLIO</h1>
+  </div>
+</section>
+
+<section class="grid">
+  {% for portfolio in page.portfolios %}
+  <div class="portfolioTxt col-6">
+  <h3>{{portfolio.name}}</h3>
+  <p>{{portfolio.description}} </p>
+  </div>
+  <div class="portfolioImg col-6">
+    <img src="{{portfolio.image}}" alt="{{portfolio.imgDescription}}"/>
+  </div>
+  {% endfor %}
+</section>
