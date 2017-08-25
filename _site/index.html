@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.4.0/gridlex.min.css">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Sans" rel="stylesheet">
     <link rel="stylesheet" href="Styles/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--META DATA -->
     <title>Charlotte's Web Development</title>
     <!-- SCRIPTS -->
@@ -12,11 +13,13 @@
   </head>
   <body>
     <header>
+      <div class="mob-hide">
+
       <nav class="grid-spaceBetween">
-        <div class="logo col-2">
-          <img src="Images/Charlottes-Web.jpg" alt="logo" />
+        <div class="logo col-2_sm-12_xs-12">
+          <img src="Images/cdw-logo.png" alt="logo" />
         </div>
-        <div class="navlinks col-5">
+        <div class="navlinks col-5_sm-12_xs-12">
           <a href="#">Home</a>
           <a href="#">Bio</a>
           <a href="#">Skills</a>
@@ -24,99 +27,140 @@
           <a href="#">Contact</a>
         </div>
       </nav>
+    </div>
+      <!-- Mobile responsive hamburger menu -->
+      <nav>
+      <div class="burger-button mob-show">
+          <span class="burger-top"></span>
+          <span class="burger-middle"></span>
+          <span class="burger-bottom"></span>
+      </div>
+
+       <div class="burger-menu">
+        <ul>
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">Bio</a>
+          </li>
+          <li>
+            <a href="">Skills</a>
+          </li>
+          <li>
+            <a href="">Portfolio</a>
+          </li>
+          <li>
+            <a href="">Contact</a>
+          </li>
+        <ul>
+      </div>
+    </nav>
     </header>
 
-        <section class="bannerImage">
-      <div class="bannerImageTxt">
+        <section class="bannerImage center">
         <h1>Charlotte's Web Development</h1>
-      </div>
     </section>
-    <section id="About">
-      <div class="aboutTxt">
+
+    <section id="About" class="grid center">
+      <div class="padded-5 col-6">
         <h2>About Me</h2>
         <p>Salutations! My name is Charlotte - yes, just like the spider. Spiders are really very useful creatures, and it’s my job to spin a web that allows your vision to come to life through the combination of interactive development and strategic design. I am passionate about helping others achieve their personal and professional goals and strive to create lasting impressions for all clients. Your success is my success, period.</p>
       </div>
+      <div class="col-6 portfolioImg" style="background-image:url('/Images/aboutme.JPG');">
+
+      </div>
     </section>
-    <section id="Skills">
+    <section id="Skills" class="center">
       <h2>Skills</h2>
-      <div class="grid skillsTxt">
+      <div class="grid skill-item">
         
-        <div class="mySkill col-4_sm-12_xs-12">
+        <div class="col-4_sm-12_xs-12 padded-2">
           <i class="fa fa-code" aria-hidden="true"></i>
           <h3>HTML</h3>
           <p>Leave the structure of your website in my hands. Webs are incredibly tedious to build, and I'll gladly take care of the hard work for you. </p>
         </div>
         
-        <div class="mySkill col-4_sm-12_xs-12">
+        <div class="col-4_sm-12_xs-12 padded-2">
           <i class="fa fa-css3" aria-hidden="true"></i>
           <h3>CSS</h3>
           <p>All webs are beautifully designed, each one unique in its own way. Each website I create is aesthetically pleasing and clever in approach. </p>
         </div>
         
-        <div class="mySkill col-4_sm-12_xs-12">
+        <div class="col-4_sm-12_xs-12 padded-2">
           <i class="fa fa-file-code-o" aria-hidden="true"></i>
           <h3>JavaScript</h3>
-          <p>Structure and design of a web only take you so far. Dynamic and responsive websites that promote client-facing interaction are guaranteed to set you apart from the rest. </p>
+          <p>Structure and design of a web can only take you so far. Dynamic and responsive websites that encourage client-facing interaction are guaranteed to set you apart from the rest. </p>
         </div>
         
       </div>
     </section>
-    <section id="Portfolio">
+
+    <section id="Portfolio" class="center">
       <h2>Portfolio</h2>
-      <div class="grid">
+
         
-        <div class="col-6_sm-12_xs-12 portfolioTxt">
-          <h3>Project 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <div class="col-6_sm-12_xs-12 portfolioImg">
-          <img src="Images/guitar.jpg" alt="">
-        </div>
-        
-        <div class="col-6_sm-12_xs-12 portfolioTxt">
-          <h3>Project 2</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <div class="col-6_sm-12_xs-12 portfolioImg">
-          <img src="Images/wedding.jpg" alt="">
+        <div class="grid portfolio-item left">
+          <div class="col-6_sm-12_xs-12 padded-5">
+            <h3>Project 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="col-6_sm-12_xs-12 portfolioImg" style="background-image:url('Images/guitar.jpg');">
+          </div>
         </div>
         
-        <div class="col-6_sm-12_xs-12 portfolioTxt">
-          <h3>Project 3</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="grid portfolio-item left">
+          <div class="col-6_sm-12_xs-12 padded-5">
+            <h3>Project 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="col-6_sm-12_xs-12 portfolioImg" style="background-image:url('Images/wedding.jpg');">
+          </div>
         </div>
-        <div class="col-6_sm-12_xs-12 portfolioImg">
-          <img src="Images/web-2.jpeg" alt="">
+        
+        <div class="grid portfolio-item left">
+          <div class="col-6_sm-12_xs-12 padded-5">
+            <h3>Project 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="col-6_sm-12_xs-12 portfolioImg" style="background-image:url('Images/web-2.jpeg');">
+          </div>
         </div>
         
 
         </div>
-        <div class="col-12 buttonClass">
-          <a href="#"><button>See More</button></a>
+        <div class="col-12">
+          <a href="#"><button class="buttonClass">See More</button></a>
         </div>
       </div>
     </section>
 
 
-    <footer id="contact">
+    <footer id="contact" class="center">
       <h2>Get In Touch</h2>
-      <div class="grid">
-        <div class="col-4">
+      <div class="grid left">
+        <div class="col-4_sm-12_xs-12">
           <!--- empty div -->
         </div>
-        <div class="col-4 footerForm">
-
+        <div class="col-4_sm-12_xs-12 footerForm">
+          <form method="POST" class="grid-center"
+            action="http://formspree.io/girlsleeplive@gmail.com">
+           <input class="col-8_sm-12_xs-12" type="text" name="name" placeholder="Your name">
+            <input class="col-8_sm-12_xs-12" type="email" name="email" placeholder="Your email">
+            <textarea class="col-8_sm-12_xs-12" name="message" placeholder="Your project idea"></textarea>
+            <button class="col-8_sm-12_xs-12 Send" type="submit">Send</button>
+          </form>
         </div>
-        <div class="col-4 contactNav">
+        <div class="col-4_sm-12_xs-12 contactNav">
           <nav>
             <a href="#">Facebook</a>
             <a href="#">Instagram</a>
-            <a href="#">Twitter</a>
           </nav>
         </div>
       </div>
 
     </footer>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/JavaScript/script.js" type="text/javascript"></script>
   </body>
 </html>

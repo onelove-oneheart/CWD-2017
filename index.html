@@ -9,7 +9,7 @@ skills:
     description: All webs are beautifully designed, each one unique in its own way. Each website I create is aesthetically pleasing and clever in approach.
   - icon: file-code-o
     name: JavaScript
-    description: Structure and design of a web only take you so far. Dynamic and responsive websites that promote client-facing interaction are guaranteed to set you apart from the rest.
+    description: Structure and design of a web can only take you so far. Dynamic and responsive websites that encourage client-facing interaction are guaranteed to set you apart from the rest.
 projects:
   - name: Project 1
     description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -22,22 +22,24 @@ projects:
     image: Images/web-2.jpeg
 ---
 
-    <section class="bannerImage">
-      <div class="bannerImageTxt">
+    <section class="bannerImage center">
         <h1>Charlotte's Web Development</h1>
-      </div>
     </section>
-    <section id="About">
-      <div class="aboutTxt">
+
+    <section id="About" class="grid center">
+      <div class="padded-5 col-6">
         <h2>About Me</h2>
         <p>Salutations! My name is Charlotte - yes, just like the spider. Spiders are really very useful creatures, and it’s my job to spin a web that allows your vision to come to life through the combination of interactive development and strategic design. I am passionate about helping others achieve their personal and professional goals and strive to create lasting impressions for all clients. Your success is my success, period.</p>
       </div>
+      <div class="col-6 portfolioImg" style="background-image:url('/Images/aboutme.JPG');">
+
+      </div>
     </section>
-    <section id="Skills">
+    <section id="Skills" class="center">
       <h2>Skills</h2>
-      <div class="grid skillsTxt">
+      <div class="grid skill-item">
         {% for skill in page.skills %}
-        <div class="mySkill col-4_sm-12_xs-12">
+        <div class="col-4_sm-12_xs-12 padded-2">
           <i class="fa fa-{{skill.icon}}" aria-hidden="true"></i>
           <h3>{{skill.name}}</h3>
           <p>{{skill.description}} </p>
@@ -45,22 +47,24 @@ projects:
         {% endfor %}
       </div>
     </section>
-    <section id="Portfolio">
+
+    <section id="Portfolio" class="center">
       <h2>Portfolio</h2>
-      <div class="grid">
+
         {% for project in page.projects %}
-        <div class="col-6_sm-12_xs-12 portfolioTxt">
-          <h3>{{project.name}}</h3>
-          <p>{{project.description}}</p>
-        </div>
-        <div class="col-6_sm-12_xs-12 portfolioImg">
-          <img src="{{project.image}}" alt="{{project.imageDescription}}">
+        <div class="grid portfolio-item left">
+          <div class="col-6_sm-12_xs-12 padded-5">
+            <h3>{{project.name}}</h3>
+            <p>{{project.description}}</p>
+          </div>
+          <div class="col-6_sm-12_xs-12 portfolioImg" style="background-image:url('{{project.image}}');">
+          </div>
         </div>
         {% endfor %}
 
         </div>
-        <div class="col-12 buttonClass">
-          <a href="#"><button>See More</button></a>
+        <div class="col-12">
+          <a href="#"><button class="buttonClass">See More</button></a>
         </div>
       </div>
     </section>
