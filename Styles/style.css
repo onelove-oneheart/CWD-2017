@@ -113,6 +113,7 @@ nav a:hover{
 .skill-item i{
   font-size:36px;
   padding: 5%;
+  color:#427b3e;
 }
 /*--------------------- portfolio section styles --------------*/
 #portfolio{
@@ -140,6 +141,14 @@ nav a:hover{
 
 }
 /*---------------- footer section styles ---------------*/
+footer{
+  background-image: url('../Images/marble.jpg');
+}
+
+footer i{
+  padding:2%;
+}
+
 input{
   margin-top:2%;
 }
@@ -150,8 +159,10 @@ footer nav{
   margin-top:2%;
 }
 
-footer nav:hover{
+footer nav a:hover{
   color: #427b3e;
+  text-decoration: none;
+
 }
 .button{
   background-color:#8d9050;
