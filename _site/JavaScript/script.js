@@ -5,6 +5,10 @@ $( document ).ready(function() {
     $(".burger-button").toggleClass("active");
       $(".burger-menu").slideToggle();
   });
+  $(".burger-menu a").click(function(){
+    $(".burger-button").toggleClass("active");
+      $(".burger-menu").slideToggle();
+  });
 
   // This is smooth scrolling
 
