@@ -25,14 +25,16 @@ portfolios:
   </div>
 </section>
 
-<section class="grid">
+<section>
   {% for portfolio in page.portfolios %}
-  <div class="portfolioTxt col-6_sm-12_xs-12">
-  <h3>{{portfolio.name}}</h3>
-  <p>{{portfolio.description}} </p>
-  </div>
-  <div class="portfolioImg col-6_sm-12_xs-12">
-    <img src="{{portfolio.image}}" alt="{{portfolio.imgDescription}}"/>
-  </div>
+  <div class="grid project-item">
+        <div class="padded-2 col-6_sm-12_xs-12">
+          <h3>{{portfolio.name}}</h3>
+          <p>{{portfolio.description}} </p>
+        </div>
+        <div class="portfolioImg col-6_sm-12_xs-12" style="background-image:url('{{portfolio.image}}')">
+
+        </div>
+    </div>
   {% endfor %}
 </section>
