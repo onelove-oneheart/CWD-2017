@@ -98,7 +98,7 @@ nav a:hover{
 
 }
 .AboutImg{
-  background-image:url('../Images/Char5.JPG');
+  background-image:url('/Images/Char5.JPG');
   background-position: center;
   background-repeat:no-repeat;
   background-size:cover;
