@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin:0;
   padding:0;
-  border: 1px solid rgb(220,220,220);
+  /*border: 1px solid rgb(220,220,220);*/
 }
 /*Universal Styles */
 img {
@@ -13,7 +13,7 @@ h1{
   font-family: 'Amatic SC', cursive;
   font-size: 92px;
   color: white;
-  background-color:rgba(221,168,118,0.5);
+  /*background-color:rgba(221,168,118,0.5);*/
   }
 h2, h3{
   font-family: 'Josefin Sans', sans-serif;
@@ -66,7 +66,6 @@ section {
   min-height: 85vh;
 }
 
-
 /* ---------------- nav styles -------------------*/
 
 nav{
@@ -82,7 +81,7 @@ nav a{
   color:black;
   text-decoration: none;
   letter-spacing: 2px;
-  font-size:15px;
+  font-size:24px;
   padding-left: 2%;
   padding-right: 2%;
 }
@@ -90,6 +89,7 @@ nav a:hover{
   color:black;
   text-decoration: underline;
 }
+
 
 /* --------- about section styles -------------*/
 
@@ -106,8 +106,9 @@ nav a:hover{
 }
 /*----------- skills section styles ------------*/
 
-#skills{
+#Skills{
   padding: 5%;
+  border-top: 1px solid black;
 }
 
 .skill-item i{
@@ -116,7 +117,7 @@ nav a:hover{
   color:#427b3e;
 }
 /*--------------------- portfolio section styles --------------*/
-#portfolio{
+#Portfolio{
   padding: 5%;
 }
 
@@ -137,8 +138,12 @@ nav a:hover{
   background-color:rgb(246,196,124);
   text-align: center;
 }
-.portfolioBanner:hover{
+.portfolio-item{
+  border: 1px solid #427b3e;
+}
 
+.project-item{
+  border: 1px solid rgb(246,196,124);
 }
 /*---------------- footer section styles ---------------*/
 footer{
@@ -158,6 +163,9 @@ textarea{
 footer nav{
   margin-top:2%;
 }
+footer nav a{
+  font-size:20px;
+}
 
 footer nav a:hover{
   color: #427b3e;
@@ -167,8 +175,8 @@ footer nav a:hover{
 .button{
   background-color:#8d9050;
   color: white;
-  padding: 2.5%;
-  margin-top:1%;
+  padding: 4%;
+  margin-top:2%;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 18px;
   display: inline-block;
@@ -181,10 +189,10 @@ footer nav a:hover{
 }
 .button.Send{
   padding-top:2%;
-  margin-top:2%;
+  margin-top:6%;
 }
 input, textarea{
-  margin-top:4%;
+  margin-top:6%;
 }
 
 /*---- responsive hamburger menu -------*/

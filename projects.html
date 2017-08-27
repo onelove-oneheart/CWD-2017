@@ -19,7 +19,7 @@ portfolios:
     imgDescription: adventure
 
 ---
-<section class="portfolioBanner">
+<section class="portfolioBanner" data-aos="fade-down">
   <div>
     <h1>PORTFOLIO</h1>
   </div>
@@ -27,7 +27,7 @@ portfolios:
 
 <section>
   {% for portfolio in page.portfolios %}
-  <div class="grid project-item">
+  <div class="grid-middle project-item" data-aos="fade-up">
         <div class="padded-2 col-6_sm-12_xs-12">
           <h3>{{portfolio.name}}</h3>
           <p>{{portfolio.description}} </p>

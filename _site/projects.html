@@ -4,6 +4,7 @@
     <!-- LINKS TO STYLE SHEETS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.4.0/gridlex.min.css">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Sans" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="Styles/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--META DATA -->
@@ -12,7 +13,7 @@
     <script src="https://use.fontawesome.com/57def933c9.js"></script>
   </head>
   <body>
-    <header>
+    <header id="top">
 
       <nav class="grid-spaceBetween-middle">
         <div class="logo col-2_sm-12_xs-12">
@@ -37,26 +38,28 @@
        <div class="burger-menu">
         <ul>
           <li>
-            <a href="#Home">Home</a>
+            <a href="/#Home">Home</a>
           </li>
           <li>
-            <a href="#About">Bio</a>
+            <a href="/#About">Bio</a>
           </li>
           <li>
-            <a href="#Skills">Skills</a>
+            <a href="/#Skills">Skills</a>
           </li>
           <li>
-            <a href="#Portfolio">Portfolio</a>
+            <a href="/#Portfolio">Portfolio</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="/#contact">Contact</a>
           </li>
         <ul>
       </div>
     </nav>
     </header>
 
-    <section class="portfolioBanner">
+
+
+    <section class="portfolioBanner" data-aos="fade-down">
   <div>
     <h1>PORTFOLIO</h1>
   </div>
@@ -64,7 +67,7 @@
 
 <section>
   
-  <div class="grid project-item">
+  <div class="grid-middle project-item" data-aos="fade-up">
         <div class="padded-2 col-6_sm-12_xs-12">
           <h3>Project 4</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -74,7 +77,7 @@
         </div>
     </div>
   
-  <div class="grid project-item">
+  <div class="grid-middle project-item" data-aos="fade-up">
         <div class="padded-2 col-6_sm-12_xs-12">
           <h3>Project 5</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -84,7 +87,7 @@
         </div>
     </div>
   
-  <div class="grid project-item">
+  <div class="grid-middle project-item" data-aos="fade-up">
         <div class="padded-2 col-6_sm-12_xs-12">
           <h3>Project 6</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -94,7 +97,7 @@
         </div>
     </div>
   
-  <div class="grid project-item">
+  <div class="grid-middle project-item" data-aos="fade-up">
         <div class="padded-2 col-6_sm-12_xs-12">
           <h3>Project 7</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -126,6 +129,7 @@
           <nav>
             <a href="http://facebook.com/charlaylay"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a>
             <a href="http://instagram.com/charrcharrbinxx/"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
+            <a href="#top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
           </nav>
         </div>
       </div>
@@ -133,5 +137,6 @@
     </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/JavaScript/script.js" type="text/javascript"></script>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
   </body>
 </html>
